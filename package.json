@@ -1,0 +1,16 @@
+{
+  "name": "update-cloudflare-ip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --watch --env-file=.env index.js",
+    "deploy": "pm2 start --name \"cloudflare ip updater\" index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
